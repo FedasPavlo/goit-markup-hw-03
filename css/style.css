@@ -40,8 +40,13 @@ img{
     display: block;
 }
 
+header{
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .container{
-    margin: 0 156px;
+    width: 1158px;
+    margin: auto;
 }
 
 .nav-cover{
@@ -223,6 +228,15 @@ button:hover, button:focus{
     padding-bottom: 120px;
 }
 
+
+.portfolio .container ul li{
+    border-bottom: 1px solid #E7E9FC;
+    margin-bottom: 48px;
+}
+
+.portfolio .container ul li .title, .portfolio .container ul li .desc{
+    text-align: left;
+}
 
 footer{
     background-color: #2E2F42;
