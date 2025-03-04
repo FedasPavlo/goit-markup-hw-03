@@ -220,6 +220,7 @@ button:hover, button:focus{
 
 .team-card{
     background-color: white;
+    width: calc((100% - 72px) / 4);
 
 }
 
