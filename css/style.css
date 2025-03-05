@@ -1,3 +1,5 @@
+/*MAIN*/
+
 *,
 *::before,
 *::after {
@@ -40,14 +42,18 @@ img{
     display: block;
 }
 
-header{
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*HEADER*/
+
+.header{
     border-bottom: 1px solid #E7E9FC;
 }
 
-.container{
-    width: 1158px;
-    margin: 0 auto;
-}
 
 .header .container{
     display: flex;
@@ -59,11 +65,23 @@ header{
 
 .nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 24px 0;
 }
 
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.logo span {
+    color: #2e2f42;
+}
 
 .menu-bar{
     display: flex;
@@ -74,11 +92,13 @@ header{
 .nav-bar{
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: block;
 
     padding: 24px 0;
 }
 
-.nav-bar:hover, .nav-bar:focus{
+.nav-bar:hover, 
+.nav-bar:focus{
     color: #404bbf;
 }
 
@@ -92,29 +112,18 @@ header{
 }
 
 .address-li{
+    display: block;
     letter-spacing: 0.02em;
     color: #434455;
+    padding: 24px 0;
 }
 
-.address-bar:hover, .address-bar:focus{
+.address-bar:hover, 
+.address-bar:focus{
     color: #404bbf;
 }
 
-.logo{
-    font-family: "Raleway", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: #4d5ae5;
-    margin-right: 76px;
-}
-
-.logo span{
-    color: #2e2f42;
-}
-
+/*SECTION Welcome*/
 
 .welcome{
     background-color: #2E2F42;
@@ -150,9 +159,12 @@ header{
     height: 56px;
 }
 
-button:hover, button:focus{
+button:hover, 
+button:focus{
     background-color: #404BBF;
 }
+
+/*SECTION Feature*/
 
 .feature{
     padding: 120px 0;
@@ -167,11 +179,11 @@ button:hover, button:focus{
     width: calc((100% - 72px) / 4);
 }
 
-.feature-cover ul li .title{
+.feature-card .title{
     text-align: left;
 }
 
-.feature-cover ul li .desc{
+.feature-card .desc{
     text-align: left;
 }
 
@@ -189,6 +201,8 @@ button:hover, button:focus{
     overflow: hidden;
 }
 
+/*SECTION Team*/
+
 .team{
     background-color: #F4F4FD;
     padding: 120px 0;
@@ -203,7 +217,7 @@ button:hover, button:focus{
     margin-bottom: 72px;
 }
 
-.title {
+.team-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -213,7 +227,7 @@ button:hover, button:focus{
     margin-bottom: 8px;
 }
 
-.desc {
+.team-desc {
     letter-spacing: 0.02em;
     text-align: center;
 }
@@ -233,14 +247,16 @@ button:hover, button:focus{
     justify-content: center;
 }
 
-.team .container ul li {
+.team li {
     margin-right: 24px;
     border-radius: 0 0 4px 4px;
 }
 
-.team .container ul li:last-child {
+.team li:last-child {
     margin-right: 0;
 }
+
+/*SECTION Portfolio*/
 
 .portfolio{
     padding: 120px 0;
@@ -265,9 +281,12 @@ button:hover, button:focus{
     border-top: none;
 }
 
-.portfolio .container ul li .title, .portfolio .container ul li .desc{
+.portfolio-title, 
+.portfolio-desc{
     text-align: left;
 }
+
+/*FOOTER*/
 
 footer{
     background-color: #2E2F42;
@@ -287,7 +306,7 @@ footer{
     margin-bottom: 16px;
 }
 
-footer .container p{
+.desc-footer{
     max-width: 264px;
     text-align: left;
     padding-bottom: 0;
